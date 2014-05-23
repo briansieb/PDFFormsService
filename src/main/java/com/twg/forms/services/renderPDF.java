@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 public class renderPDF 
 {
 	@GET
-    public String get() {
+    public pdfForm get() {
         return "PDF_CALL";
     }
 }
