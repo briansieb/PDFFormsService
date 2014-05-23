@@ -5,6 +5,15 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class PDFFormResponse 
 {
 	private String pdfFormName;
+	private String pdfContents;
+	
+	public String getPdfContents() {
+		return pdfContents;
+	}
+
+	public void setPdfContents(String pdfContents) {
+		this.pdfContents = pdfContents;
+	}
 
 	public PDFFormResponse()
 	{
