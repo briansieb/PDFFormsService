@@ -1,4 +1,6 @@
 package com.example.services;
+import javax.ws.rs.PathParam;
+import java.util.TimeZone;
 
 import com.example.models.Time;
 
@@ -16,5 +18,11 @@ public class TimeService {
         return new Time();
     }
 
+    @GET
+    @Path("/{timezone}")
+    public Time get(@PathParam("timezone") String timezone) {
+        return new Time(TimeZone.getTimeZone(timezone.toUpperCase()));
+    }    
+    
 }
 
