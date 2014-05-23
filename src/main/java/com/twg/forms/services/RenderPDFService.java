@@ -28,9 +28,9 @@ public class RenderPDFService
 		try
 		{
 		
-		PdfReader pdfReader = new PdfReader(new URL("http://http://cryptic-headland-7139.herokuapp.com/TWG_Test_Contract.pdf"));
+		PdfReader pdfReader = new PdfReader(new URL("http://cryptic-headland-7139.herokuapp.com/TWG_Test_Contract.pdf"));
 		ByteArrayOutputStream fos = new ByteArrayOutputStream();
-		
+		 
 		PdfStamper stamper = new PdfStamper(pdfReader, fos);
 		
 		Set<String> fields = (Set<String>) stamper.getAcroFields().getFields().keySet();
