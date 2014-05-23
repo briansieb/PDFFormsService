@@ -5,13 +5,15 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import com.twg.forms.models.PDFFormResponse;
+
 
 @Path("/renderPDF")
 @Produces(MediaType.APPLICATION_JSON)
 public class renderPDF 
 {
 	@GET
-    public String get() {
-        return "PDF_CALL";
+    public PDFFormResponse get() {
+        return new PDFFormResponse();
     }
 }
