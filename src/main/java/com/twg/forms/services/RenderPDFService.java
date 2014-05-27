@@ -83,6 +83,7 @@ public class RenderPDFService
 				try
 				{
 					stamper.getAcroFields().setField(fieldName, formParams.getFirst(fieldName));
+					System.out.println(fieldName);
 				}catch(Exception e)
 				{
 					//If Field doesn't exist on the Form move on don't die......
