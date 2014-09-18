@@ -92,6 +92,7 @@ public class RenderPDFService
 					e.printStackTrace();
 				}
 			}
+			stamper.setFormFlattening(true);
 			stamper.close();
 			pdfReader.close();
 			
