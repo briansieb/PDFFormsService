@@ -92,6 +92,7 @@ public class RenderPDFService
 				}catch(Exception e)
 				{
 					//If Field doesn't exist on the Form move on don't die we need to add error handling this properly here
+					System.out.println("Field Not Found:" + fieldName);
 					e.printStackTrace();
 				}
 			}
