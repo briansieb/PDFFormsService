@@ -73,7 +73,7 @@ public class RenderPDFService
 			//We can make this an externally available file with Chatter External Files and pass in the REST Parameters
 			//PdfReader pdfReader = new PdfReader(new URL("https://na17.salesforce.com/sfc/p/o0000000auQD/a/o0000000Caqd/ACp_jUnPpNsXYCSQ.597vOKNZPqD0EhN_8yHsDBbysI="));
 			String pdfURL = formParams.getFirst("pdfTemplateURL");
-			
+			System.out.println("pdfTemplateURL == " + pdfURL);
 			PdfReader pdfReader = new PdfReader(new URL(pdfURL));
 			
 			ByteArrayOutputStream fos = new ByteArrayOutputStream();
