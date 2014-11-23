@@ -1,6 +1,6 @@
 {
   "name": "Simple PDF Form Service",
   "description": "A simple PDF Form Service that is REST based",
-  "repository": "https://github.com/heroku/node-js-sample",
+  "repository": "https://github.com/corycowgill/PDFFormsService",
   "keywords": ["PDF", "Form Service"]
 }
